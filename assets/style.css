@@ -1,19 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-body, html {
+:root{
+    --body-copy:17px;
+    --body-copy-line-height: calc(var(--body-copy)*1.2);
+
+    --main-heading: 60px;
+    --main-heading-line-height: calc(var(--main-heading));
+}
+
+body {
     box-sizing: border-box;
     margin: auto;
     padding: auto;
-    width: 90%;
+    width: 80%;
     font-family: 'Poppins', serif;
     background-image: url(Clouds.jpg);
     background-size: cover;
 }
 
-.titleimg {
-    width: 100%;
-    margin:0%;
-    padding: 0%;
+.coverimg > img {
+    padding: 0;
+    margin: 0;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.channel-description {
+    font-size: var(--main-heading);
+    line-height: var(--main-heading-line-height);
+    width: 80%;
+    margin-bottom: 100px;
 }
 
 .image-block {
