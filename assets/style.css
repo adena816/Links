@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body, html {
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+    width: 90%;
+    font-family: 'Poppins', serif;
+    background-image: url(Clouds.jpg);
+    background-size: cover;
+}
+
+.image-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    background-color: #EE7474;
+    border: 20px solid black ;
+    border-bottom: 0px;
+}
+
+      img {
+        width: 70%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        object-fit: contain;
+        display: block;
+        margin: auto;
+        mix-blend-mode: multiply;
+      }
+
+/*BOTTOM NAVIGATION*/
+.mobile-nav {
+    margin: 0;
+    padding: 40px;
+	display: flex;
+	position: fixed;
+    background-color: white; opacity: 90%;
+    bottom: 0;
+    justify-content: space-evenly;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    font-size: 48px;
+}
+
+.bloc-icon {
+    display: flex;
+    padding: 20px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 25%;
+}
