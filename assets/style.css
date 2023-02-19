@@ -21,7 +21,7 @@ body {
 .coverimg > img {
     padding: 0;
     margin: 0;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 40px;
 }
 
@@ -30,6 +30,30 @@ body {
     line-height: var(--main-heading-line-height);
     width: 80%;
     margin-bottom: 100px;
+}
+
+.qcircle {
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+}
+.quarter-circle-left{
+width: 400px;
+height: 400px;
+background-color: rgb(232, 255, 252, 0.5);
+border-radius: 0 100% 0 0;
+border: 20px solid black ;
+border-bottom: 0px;
+
+}
+.quarter-circle-right{
+    width: 400px;
+    height: 400px;
+    border-radius: 100% 0 0 0;
+    background-color: rgb(232, 255, 252, 0.5);
+    border: 20px solid black ;
+    border-bottom: 0px;
+    border-right: 0px;
 }
 
 .image-block {
@@ -56,21 +80,20 @@ img {
     padding: 40px;
 	display: flex;
 	position: fixed;
-    background-color: white; opacity: 90%;
+    background-color: black; opacity: 80%;
     bottom: 0;
     justify-content: space-evenly;
     z-index: 9999;
     left: 0;
     right: 0;
-    font-size: 48px;
+    font-size: 40px;
 }
 
 .bloc-icon {
     display: flex;
     padding: 20px;
-    color: black;
+    color: white;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
     border-radius: 25%;
 }
