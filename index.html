@@ -29,27 +29,108 @@
 </ul>
 
 <!-- Images. -->
-    <template id="image-block">
+<template id="image-block">
+    <li>
+        <figure class="image-block">
+            <picture>
+                <source class="image-display">
+                <img class="image">
+            </picture>
+            <a class="link">
+            </a>
+        </figure>
+    </li>
+</template>
+
+    <!-- Articles / PDF's -->
+		<template id="pdf-block">
+			<li>
+				<figure class="pdf-block">
+					<picture>
+						<source class="image-display">
+						<a class="link"><img class="image"></a>
+					</picture>
+				</figure>
+			</li>
+		</template>
+
+    <!-- Text. -->
+    <template id="text-block">
         <li>
-            <figure class="image-block">
+            <figure class="text-block">
+                <div class="content"></div>
+            </figure>
+        </li>
+    </template>
+
+<!-- YouTube, Vimeo, etc. -->
+    <template id="video-embed-block">
+        <li>
+            <figure class="video-embed-block">
                 <picture>
                     <source class="image-display">
-                    <img class="image">
+
+                    <a class="link"><img class="image"></a>
                 </picture>
             </figure>
         </li>
     </template>
 
+<!-- Links (saved sites). -->
+    <template id="link-block">
+        <li>
+            <figure class="link-block">
+                <picture>
+                    <source class="image-display">
+                    <a class="link"><img class="image"></a>
+                </picture>
+            </figure>
+        </li>
+    </template>
+
+<!-- Spotify, Soundcloud, etc. -->
+		<template id="audio-embed-block">
+			<li>
+				<figure class="audio-embed"> <!-- You can use the container classes to style a whole type. -->
+					<picture>
+						<source class="image-display">
+                        <a class="link"><img class="image"></a>
+					</picture>
+				</figure>
+			</li>
+		</template>
+
+<!-- Uploaded audio files. -->
+<template id="audio-file-block">
+    <li>
+        <figure class="audio-file-block">
+            <picture>
+                <source class="image-display">
+                <a class="link"><img class="image"></a>
+            </picture>
+        </figure>
+    </li>
+</template>
+
+<!-- Uploaded video files. -->
+<template id="video-file-block">
+    <li>
+        <figure class="video-file-block">
+            <picture>
+                <source class="image-display">
+                <a class="link"><img class="image"></a>
+            </picture>
+        </figure>
+    </li>
+</template>
+
         <!-- BOTTOM NAVIGATION FOR MOBILE -->
         <nav class="mobile-nav">
-            <a class="bloc-icon">Images
-            </a>
-            <a class="bloc-icon">Links
-            </a>
-            <a class="bloc-icon">MP3/4
-            </a>
-            <a class="bloc-icon">PDFs
-            </a>
+            <a class="tabs" id="white" ></a>
+            <a class="tabs" id="red" ></a>
+            <a class="tabs" id="blue" ></a>
+            <a class="tabs" id="green" ></a>
+            <a class="tabs" id="orange" ></a>
         </nav>
     </body>
     </html>

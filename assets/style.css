@@ -56,10 +56,9 @@ border-bottom: 0px;
     border-right: 0px;
 }
 
-.image-block {
+.image-block, .link-block, .pdf-block, .text-block, .video-embed-block, .audio-embed, .video-file-block, .audio-file-block {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    background-color: #EE7474;
     border: 20px solid black ;
     border-bottom: 0px;
 }
@@ -71,7 +70,6 @@ img {
         object-fit: contain;
         display: block;
         margin: auto;
-        mix-blend-mode: multiply;
       }
 
 /*BOTTOM NAVIGATION*/
@@ -80,20 +78,38 @@ img {
     padding: 40px;
 	display: flex;
 	position: fixed;
-    background-color: black; opacity: 80%;
+    background-color: rgb(255, 255, 255, 0.7);
     bottom: 0;
     justify-content: space-evenly;
     z-index: 9999;
     left: 0;
     right: 0;
-    font-size: 40px;
 }
 
-.bloc-icon {
-    display: flex;
-    padding: 20px;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25%;
+
+.tabs {
+    width: 100px;
+    height: 82px;
+    border-radius: 100% 100% 0 0;
+    border: 12px solid black ;
+}
+
+#white {
+    background-color: white;
+}
+
+#red {
+    background-color: #EE7474;
+}
+
+#blue {
+    background-color: #74B3EE;
+}
+
+#green {
+    background-color: #C7EE74;
+}
+
+#orange {
+    background-color: #FFA95A;
 }
