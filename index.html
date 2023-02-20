@@ -23,107 +23,6 @@
     <div class="quarter-circle-left"></div>
 </div>
 
-
-<!-- CONTENT -->
-<ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
-</ul>
-
-<!-- Images. -->
-<template id="image-block">
-    <li>
-        <figure class="image-block">
-            <picture>
-                <source class="image-display">
-                <img class="image">
-            </picture>
-            <a class="link">
-            </a>
-        </figure>
-    </li>
-</template>
-
-    <!-- Articles / PDF's -->
-		<template id="pdf-block">
-			<li>
-				<figure class="pdf-block">
-					<picture>
-						<source class="image-display">
-						<a class="link"><img class="image"></a>
-					</picture>
-				</figure>
-			</li>
-		</template>
-
-    <!-- Text. -->
-    <template id="text-block">
-        <li>
-            <figure class="text-block">
-                <div class="content"></div>
-            </figure>
-        </li>
-    </template>
-
-<!-- YouTube, Vimeo, etc. -->
-    <template id="video-embed-block">
-        <li>
-            <figure class="video-embed-block">
-                <picture>
-                    <source class="image-display">
-
-                    <a class="link"><img class="image"></a>
-                </picture>
-            </figure>
-        </li>
-    </template>
-
-<!-- Links (saved sites). -->
-    <template id="link-block">
-        <li>
-            <figure class="link-block">
-                <picture>
-                    <source class="image-display">
-                    <a class="link"><img class="image"></a>
-                </picture>
-            </figure>
-        </li>
-    </template>
-
-<!-- Spotify, Soundcloud, etc. -->
-		<template id="audio-embed-block">
-			<li>
-				<figure class="audio-embed"> <!-- You can use the container classes to style a whole type. -->
-					<picture>
-						<source class="image-display">
-                        <a class="link"><img class="image"></a>
-					</picture>
-				</figure>
-			</li>
-		</template>
-
-<!-- Uploaded audio files. -->
-<template id="audio-file-block">
-    <li>
-        <figure class="audio-file-block">
-            <picture>
-                <source class="image-display">
-                <a class="link"><img class="image"></a>
-            </picture>
-        </figure>
-    </li>
-</template>
-
-<!-- Uploaded video files. -->
-<template id="video-file-block">
-    <li>
-        <figure class="video-file-block">
-            <picture>
-                <source class="image-display">
-                <a class="link"><img class="image"></a>
-            </picture>
-        </figure>
-    </li>
-</template>
-
         <!-- BOTTOM NAVIGATION FOR MOBILE -->
         <nav class="mobile-nav">
             <input type="radio" name="check" class="tabs_radio" id="tab1" checked>
@@ -132,15 +31,122 @@
             <input type="radio" name="check" class="tabs_radio" id="tab2">
             <label for="tab2" div class="tabs red"></label>
 
+
             <input type="radio" name="check" class="tabs_radio" id="tab3">
             <label for="tab3" div class="tabs blue"></label>
-  
+
+
             <input type="radio" name="check" class="tabs_radio" id="tab4">
             <label for="tab4" div class="tabs green"></label>
-   
+
+
             <input type="radio" name="check" class="tabs_radio" id="tab5">
             <label for="tab5" div class="tabs orange"></label>
 
+
         </nav>
+
+<!-- CONTENT -->
+<ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
+</ul>
+
+<!-- Images. -->
+<div class="content">
+    <template id="image-block">
+        <li>
+            <figure class="image-block">
+                <picture>
+                    <source class="image-display">
+                    <img class="image">
+                </picture>
+                <a class="link">
+                </a>
+            </figure>
+        </li>
+    </template>
+
+        <!-- Articles / PDF's -->
+            <template id="pdf-block">
+                <li>
+                    <figure class="pdf-block">
+                        <picture>
+                            <source class="image-display">
+                            <a class="link"><img class="image"></a>
+                        </picture>
+                    </figure>
+                </li>
+            </template>
+
+        <!-- Text. -->
+        <template id="text-block">
+            <li>
+                <figure class="text-block">
+                    <div class="content"></div>
+                </figure>
+            </li>
+        </template>
+
+    <!-- YouTube, Vimeo, etc. -->
+        <template id="video-embed-block">
+            <li>
+                <figure class="video-embed-block">
+                    <picture>
+                        <source class="image-display">
+
+                        <a class="link"><img class="image"></a>
+                    </picture>
+                </figure>
+            </li>
+        </template>
+
+    <!-- Links (saved sites). -->
+        <template id="link-block">
+            <li>
+                <figure class="link-block">
+                    <picture>
+                        <source class="image-display">
+                        <a class="link"><img class="image"></a>
+                    </picture>
+                </figure>
+            </li>
+        </template>
+
+    <!-- Spotify, Soundcloud, etc. -->
+            <template id="audio-embed-block">
+                <li>
+                    <figure class="audio-embed"> <!-- You can use the container classes to style a whole type. -->
+                        <picture>
+                            <source class="image-display">
+                            <a class="link"><img class="image"></a>
+                        </picture>
+                    </figure>
+                </li>
+            </template>
+
+    <!-- Uploaded audio files. -->
+    <template id="audio-file-block">
+        <li>
+            <figure class="audio-file-block">
+                <picture>
+                    <source class="image-display">
+                    <a class="link"><img class="image"></a>
+                </picture>
+            </figure>
+        </li>
+    </template>
+
+    <!-- Uploaded video files. -->
+    <template id="video-file-block">
+        <li>
+            <figure class="video-file-block">
+                <picture>
+                    <source class="image-display">
+                    <a class="link"><img class="image"></a>
+                </picture>
+            </figure>
+        </li>
+    </template>
+</div>
+
     </body>
     </html>

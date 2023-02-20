@@ -123,6 +123,10 @@ img {
     background-color: #ffffff;
 }
 
+.content {
+    margin-bottom: 210px;
+}
+
 .red {
     background-color: #EE7474;
 }
