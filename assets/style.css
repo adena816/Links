@@ -19,10 +19,12 @@ body {
 }
 
 .coverimg > img {
+    width: 70%;
     padding: 0;
     margin: 0;
     margin-top: 150px;
     margin-bottom: 40px;
+    background-color: rgb(255, 255, 255, 0.0);
 }
 
 .channel-description {
@@ -56,20 +58,44 @@ border-bottom: 0px;
     border-right: 0px;
 }
 
-.image-block, .link-block, .pdf-block, .text-block, .video-embed-block, .audio-embed, .video-file-block, .audio-file-block {
+.image-block {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    background-color: #EE7474;
+    border: 20px solid black ;
+    border-bottom: 0px;
+}
+
+.link-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    background-color: #74B3EE;
+    border: 20px solid black ;
+    border-bottom: 0px;
+}
+
+.pdf-block, .text-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    background-color: #FFA95A;
+    border: 20px solid black ;
+    border-bottom: 0px;
+}
+
+.video-embed-block, .audio-embed, .video-file-block, .audio-file-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    background-color:#C7EE74;
     border: 20px solid black ;
     border-bottom: 0px;
 }
 
 img {
-        width: 70%;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding: 100px;
         object-fit: contain;
         display: block;
         margin: auto;
+        mix-blend-mode: hard-light;
       }
 
 /*BOTTOM NAVIGATION*/
@@ -77,8 +103,10 @@ img {
     margin: 0;
     padding: 40px;
 	display: flex;
+    flex-wrap: wrap;
 	position: fixed;
     background-color: rgb(255, 255, 255, 0.7);
+    border: 15px solid black ;
     bottom: 0;
     justify-content: space-evenly;
     z-index: 9999;
@@ -86,30 +114,45 @@ img {
     right: 0;
 }
 
-
 .tabs {
     width: 100px;
-    height: 82px;
-    border-radius: 100% 100% 0 0;
-    border: 12px solid black ;
+    height: 100px;
+    border-radius: 100%;
+    border: 15px solid black ;
+    cursor: pointer;
+    background-color: #ffffff;
 }
 
-#white {
-    background-color: white;
-}
-
-#red {
+.red {
     background-color: #EE7474;
 }
 
-#blue {
+.blue {
     background-color: #74B3EE;
 }
 
-#green {
+.green {
     background-color: #C7EE74;
 }
 
-#orange {
+.orange {
     background-color: #FFA95A;
+}
+
+.tabs_radio {
+    display: none;
+}
+
+.tabs_radio:checked + .tabs {
+    background-color: black;
+}
+
+.selected{
+    order: 1;
+    width: 100%;
+    display: none;
+}
+
+.tabs_radio:checked + .tabs + .selected {
+    display: initial;
 }
