@@ -25,43 +25,10 @@
 </div>
 
     <section class="container">
-        <ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
+        <ul class="audio-embed-blocks audio-file-blocks video-embed-blocks video-file-blocks">
         </ul>
     </section>
 
-
-    		<!-- Images. -->
-		<template id="image-block">
-			<li>
-				<figure class="image-block">
-					<picture>
-						<source class="image-display">
-						<img class="image">
-					</picture>
-				</figure>
-			</li>
-		</template>
-
-        <!-- Articles / PDF's -->
-        <template id="pdf-block">
-            <li>
-                <figure class="pdf-block">
-                    <picture>
-                        <source class="image-display">
-                        <a class="link"><img class="image"></a>
-                    </picture>
-                </figure>
-            </li>
-        </template>
-
-    <!-- Text. -->
-    <template id="text-block">
-        <li>
-            <figure class="text-block">
-                <div class="content"></div>
-            </figure>
-        </li>
-    </template>
 
 <!-- YouTube, Vimeo, etc. -->
     <template id="video-embed-block">
@@ -70,18 +37,6 @@
                 <picture>
                     <source class="image-display">
 
-                    <a class="link"><img class="image"></a>
-                </picture>
-            </figure>
-        </li>
-    </template>
-
-<!-- Links (saved sites). -->
-    <template id="link-block">
-        <li>
-            <figure class="link-block">
-                <picture>
-                    <source class="image-display">
                     <a class="link"><img class="image"></a>
                 </picture>
             </figure>
@@ -128,12 +83,13 @@
 
     <!-- BOTTOM NAVIGATION FOR MOBILE -->
     <nav class="mobile-nav">
-        <a href="index.html"><div class="circle black"></div></a>
+        <a href="index.html"><div class="circle"></div></a>
         <a href="images.html"><div class="circle red"></div></a>
         <a href="links.html"><div class="circle blue"></div></a>
-        <a href="av.html"><div class="circle green"></div></a>
+        <a href="av.html"><div class="circle black"></div></a>
         <a href="pdf.html"><div class="circle orange"></div></a>
     </nav>
+    
 
 </body>
 </html>

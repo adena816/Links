@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass | Spring 2023</title>
+    <link href="assets/reset.css" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
+    <script defer src="assets/arena.js"></script>
+    <script defer src="assets/main.js"></script>
+</head>
+<body>
+    <section>
+        <!-- Replace this URL with your channel to connect the API! -->
+        <a href="https://www.are.na/dayna-brislane/glass-ptjclnm0-oe" id="channel-url">
+        <div class="coverimg"><img src="/assets/title.png"></div>    
+        </a>
+        <div class="channel-description"></div>
+    </section>
+
+    <!-- QUARTER CIRCLES -->   
+<div class="qcircle">
+    <div class="quarter-circle-right"></div>
+    <div class="quarter-circle-left"></div>
+</div>
+
+    <section class="container">
+        <ul class="pdf-blocks text-blocks">
+        </ul>
+    </section>
+
+
+        <!-- Articles / PDF's -->
+        <template id="pdf-block">
+            <li>
+                <figure class="pdf-block">
+                    <picture>
+                        <source class="image-display">
+                        <a class="link"><img class="image"></a>
+                    </picture>
+                </figure>
+            </li>
+        </template>
+
+    <!-- Text. -->
+    <template id="text-block">
+        <li>
+            <figure class="text-block">
+                <div class="content"></div>
+            </figure>
+        </li>
+    </template>
+
+
+
+    <!-- BOTTOM NAVIGATION FOR MOBILE -->
+    <nav class="mobile-nav">
+        <a href="index.html"><div class="circle"></div></a>
+        <a href="images.html"><div class="circle red"></div></a>
+        <a href="links.html"><div class="circle blue"></div></a>
+        <a href="av.html"><div class="circle green"></div></a>
+        <a href="pdf.html"><div class="circle black"></div></a>
+    </nav>
+
+</body>
+</html>
