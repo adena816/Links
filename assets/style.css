@@ -7,6 +7,10 @@
 
 }
 
+html{
+    cursor: url('../assets/birds-01.png'), auto;
+}
+
 body {
     box-sizing: border-box;
     margin: auto;
@@ -15,8 +19,7 @@ body {
     font-family: 'neue_montrealmedium', sans-serif;
     background-image: url(Clouds.jpg);
     background-size: cover;
-    cursor: url('../assets/cursors/birds-01.png');
- } 
+} 
 
  /*FONT*/
  @font-face {
@@ -54,14 +57,6 @@ border-left: 5px solid black;
 }
 
 /*TITLE*/
-.coverimg > img {
-    width: 70%;
-    padding: 0px;
-    margin: 0px;
-    margin-top: 60px;
-    margin-bottom: 10px;
-    background-color: rgb(255, 255, 255, 0.0);
-}
 
 .channel-description {
     font-size: var(--main-heading);
@@ -204,10 +199,6 @@ img {
         display: none;
     }
 
-    .coverimg > img {
-        width: 50%;
-        align-items: center;
-    }
 
     img {
         opacity: 50%;
