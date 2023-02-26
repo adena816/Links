@@ -57,6 +57,14 @@ border-left: 5px solid black;
 }
 
 /*TITLE*/
+.coverimg > img {
+    width: 70%;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255, 0.0);
+}
 
 .channel-description {
     font-size: var(--main-heading);
@@ -155,6 +163,23 @@ img {
 
 @media screen and (min-width:700px){
 
+    .coverimg > img {
+        opacity: 100%;
+        width: 40%;
+        padding: 0px;
+        margin-left: 30%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-color: rgb(255, 255, 255, 0.0);
+        mix-blend-mode: normal;
+        filter: none;
+        aspect-ratio: 1/1;
+    }
+
+    .channel-description {
+        display: none;
+    }
+
     .quarter-circle-left{
         width: 50vw;
         height: 70vh;
@@ -193,12 +218,6 @@ img {
         object-fit: contain;
         padding: 60px;
     }
-
-
-    .channel-description {
-        display: none;
-    }
-
 
     img {
         opacity: 50%;
