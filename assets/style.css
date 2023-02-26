@@ -15,6 +15,7 @@ body {
     font-family: 'neue_montrealmedium', sans-serif;
     background-image: url(Clouds.jpg);
     background-size: cover;
+    cursor: url('../assets/cursors/birds-01.png');
  } 
 
  /*FONT*/
@@ -109,7 +110,6 @@ img {
     display: block;
     width: 100%;
     padding: 20px;
-    mix-blend-mode: multiply;
 }
 
 /*BOTTOM NAVIGATION*/
@@ -200,19 +200,12 @@ img {
 
 
     .channel-description {
-        font-size: 30px;
-        line-height: 30px;
-        width: 30%;
-        margin-bottom: 0px;
+        display: none;
     }
 
     .coverimg > img {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-    .coverimg {
-        width: 30%;
+        width: 50%;
+        align-items: center;
     }
 
 }
