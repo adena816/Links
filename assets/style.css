@@ -5,6 +5,10 @@
     --main-heading: 7vw;
     --main-heading-line-height: calc(var(--main-heading));
 
+    --form: rgba(255, 255, 255, 0.5);
+    --border-radius: 0px;
+    --form-width: 400px;
+    --form-mob-width: 300px;
 }
 
 html{
@@ -29,6 +33,117 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+
+/*ABOUT SECTION*/
+
+label {
+    display: block;
+    height:4vw;
+  }
+  
+  button,
+  input,
+  textarea {
+    font-family: inherit;
+    font-size: 100%;
+  }
+  
+  [type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  
+  /*CUSTOM VARIABLES*/
+  
+  .about-label,.form {
+    font-size: 100%;
+    position: fixed;
+    top: 50%;
+    left: 0;
+  }
+  
+  .about-label {
+    top: 50%;
+    font-size: 2vw;
+    transform-origin: top left;
+    transform: rotate(90deg) translate(-50%, -100%);
+    z-index: 10;
+    padding: 4px 3%;
+    border-radius: 100% 100% 0 0;
+    border: 8px solid black;
+    border-bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  
+  .form {
+    width: var(--form-width);
+    /* max-height: 90vh;*/
+    height:100%;
+    transform: translate(-100%, -50%);
+    padding: 30px;
+    overflow: auto;
+    background: var(--form);
+    z-index: 10;
+  }
+  
+  
+  /*CUSTOM VARIABLES*/
+  
+  form div:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  form div:last-child {
+    text-align: right;
+  }
+  
+  .form input,
+  .form textarea {
+    padding: 0 5px;
+    width: 100%;
+  }
+  
+  .form button {
+    padding: 10px 20px;
+    width: 50%;
+    max-width: 120px;
+  }
+  
+  .form input {
+    height: 40px;
+  }
+  
+  .form textarea {
+    height: 220px;
+  }
+  
+  
+/* */
+  [type="checkbox"]:checked + .about-label {
+      transform: rotate(90deg) translate(-50%, calc((var(--form-width) + 100%) * -1));
+    }
+  
+    [type="checkbox"]:checked ~ .form {
+      transform: translate(0, -50%);
+    }
+  
+    .about-label,
+    .form {
+      transition: all 0.35s ease-in-out;
+    }
+  
+  
+/*TEXT INSIDE BOX*/
+    #sideNote{
+    text-align: left;
+    padding-top: 10px;
+    padding-left:15px;
+    padding:right, 20px;
+    left: 10px;
+}
+
 
 /*CIRCLES*/
 .qcircle {
@@ -231,4 +346,45 @@ img {
         filter: none;
     }
 
+}
+
+@media screen and (max-width: 600px) {
+    body {
+      font-size: 16px;
+    }
+
+    .form {
+      padding: 15px;
+      width: var(--form-mob-width);
+    }
+
+    form div:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    [type="checkbox"]:checked + .about-label {
+      transform: rotate(90deg) translate(-50%, calc((var(--form-mob-width) + 100%) *-1));
+    }
+
+    #sideNote{
+    margin-top:10%;
+  }
+
+    .indent{
+      text-indent: 32px;
+    }
+
+    label {
+      display: block;
+      height:10vw;
+    }
+
+    .about-label {
+      top: 50%;
+      font-size: 6vw;
+      transform-origin: top left;
+      transform: rotate(90deg) translate(-50%, -100%);
+      z-index: 10;
+      padding: 3px 5%;
+    }
 }
