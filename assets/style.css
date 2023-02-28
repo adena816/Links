@@ -5,9 +5,9 @@
     --main-heading: 7vw;
     --main-heading-line-height: calc(var(--main-heading));
 
-    --form: rgba(255, 255, 255, 0.5);
+    --form: rgba(255, 255, 255, 0.7);
     --border-radius: 0px;
-    --form-width: 400px;
+    --form-width: 500px;
     --form-mob-width: 300px;
 }
 
@@ -25,7 +25,7 @@ body {
     background-size: cover;
 } 
 
- /*FONT*/
+/*FONT*/
  @font-face {
     font-family: 'neue_montrealmedium';
     src: url('/assets/font_1/neuemontreal-medium-webfont.woff2') format('woff2'),
@@ -39,31 +39,31 @@ body {
 label {
     display: block;
     height:4vw;
-  }
-  
-  button,
-  input,
-  textarea {
+}
+
+button,
+input,
+textarea {
     font-family: inherit;
     font-size: 100%;
-  }
+}
   
-  [type="checkbox"] {
+[type="checkbox"] {
     position: absolute;
     left: -9999px;
-  }
+}
   
   
-  /*CUSTOM VARIABLES*/
+/*CUSTOM VARIABLES*/
   
-  .about-label,.form {
+.about-label,.form {
     font-size: 100%;
     position: fixed;
     top: 50%;
     left: 0;
-  }
+}
   
-  .about-label {
+.about-label {
     top: 50%;
     font-size: 2vw;
     transform-origin: top left;
@@ -73,11 +73,10 @@ label {
     border-radius: 100% 100% 0 0;
     border: 8px solid black;
     border-bottom: 0px;
-    background-color: rgba(255, 255, 255, 0.5);
-  }
+    background-color: rgba(255, 255, 255, 0.7);
+}
   
-  
-  .form {
+.form {
     width: var(--form-width);
     /* max-height: 90vh;*/
     height:100%;
@@ -86,62 +85,78 @@ label {
     overflow: auto;
     background: var(--form);
     z-index: 10;
-  }
+}
   
   
-  /*CUSTOM VARIABLES*/
+/*CUSTOM VARIABLES*/
   
-  form div:not(:last-child) {
+form div:not(:last-child) {
     margin-bottom: 20px;
-  }
+}
   
-  form div:last-child {
-    text-align: right;
-  }
+form div:last-child {
+    text-align: left;
+}
   
-  .form input,
-  .form textarea {
+.form input,
+.form textarea {
     padding: 0 5px;
     width: 100%;
-  }
+}
   
-  .form button {
+.form button {
     padding: 10px 20px;
     width: 50%;
     max-width: 120px;
-  }
+}
   
-  .form input {
+.form input {
     height: 40px;
-  }
+}
   
-  .form textarea {
+.form textarea {
     height: 220px;
-  }
+}
   
   
 /* */
-  [type="checkbox"]:checked + .about-label {
+[type="checkbox"]:checked + .about-label {
       transform: rotate(90deg) translate(-50%, calc((var(--form-width) + 100%) * -1));
-    }
+}
   
-    [type="checkbox"]:checked ~ .form {
+[type="checkbox"]:checked ~ .form {
       transform: translate(0, -50%);
-    }
+}
   
-    .about-label,
-    .form {
+.about-label,
+.form {
       transition: all 0.35s ease-in-out;
-    }
+}
   
   
 /*TEXT INSIDE BOX*/
-    #sideNote{
+#sideNote{
     text-align: left;
-    padding-top: 10px;
+    padding-top: 80px;
     padding-left:15px;
-    padding:right, 20px;
-    left: 10px;
+    padding-right: 50px;
+}
+
+.aboutheader{
+  font-size: 48px;
+  line-height: 110%;
+  margin-bottom: 40px;
+}
+
+.aboutsubheader{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.aboutcontent {
+  color: black;
 }
 
 
@@ -151,6 +166,7 @@ label {
     flex-direction: row;
     justify-content:center ;
 }
+
 .quarter-circle-left{
 width: 50vw;
 height: 20vh;
@@ -235,8 +251,8 @@ img {
 .mobile-nav {
     margin: 0;
     padding: 0px;
-	display: flex;
-	position: fixed;
+	  display: flex;
+	  position: fixed;
     background-color: rgb(255, 255, 255, 0.7);
     border: 10px solid black ;
     bottom: 0;
@@ -387,4 +403,35 @@ img {
       z-index: 10;
       padding: 3px 5%;
     }
+}
+
+@media screen and (max-width: 700px) {
+  :root {
+    --form: rgba(0, 0, 0, 0.95);
+  }
+
+  .aboutheader{
+    display: none;
+  }
+
+  .aboutsubheader{
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+
+  .aboutcontent {
+    color: white;
+  }
+
+  #sideNote{
+    padding-top: 150px;
+  }
+
+  .about-label {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.95);
+  }
+
+
 }
