@@ -426,6 +426,7 @@ img {
 
   #sideNote{
     padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .about-label {
@@ -434,7 +435,7 @@ img {
   }
 }
 
-/* @media screen and (max-width:1200px){
+@media screen and (max-width:1200px){
 
     .quarter-circle-left{
         width: 50vw;
@@ -497,4 +498,4 @@ img {
         width: 50vw;
          height: 20vh;
     }
-} */
+}
