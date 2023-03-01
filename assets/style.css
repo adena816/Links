@@ -28,8 +28,8 @@ body {
 /*FONT*/
  @font-face {
     font-family: 'neue_montrealmedium';
-    src: url('/assets/font_1/neuemontreal-medium-webfont.woff2') format('woff2'),
-         url('/assets/font_1/neuemontreal-medium-webfont.woff') format('woff');
+    src: url('font_1/neuemontreal-medium-webfont.woff2') format('woff2'),
+         url('font_1/neuemontreal-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
